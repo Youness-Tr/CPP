@@ -1,0 +1,30 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1733571808506,
+        "children": [],
+        "todo": {
+          "content": "display status normal and when deposit and when withdraw",
+          "id": 1733571808506,
+          "level": "default",
+          "done": false,
+          "start": 1733571808507
+        }
+      }
+    ],
+    "expandKeys": [],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "timelines": [],
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "todo",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "en",
+    "version": "1733571869186"
+  }
+}

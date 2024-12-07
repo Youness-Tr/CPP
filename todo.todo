@@ -1,0 +1,65 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1733497878848,
+        "children": [],
+        "todo": {
+          "content": "handle ctr+D",
+          "id": 1733497878848,
+          "level": "default",
+          "done": false,
+          "start": 1733497878848
+        }
+      },
+      {
+        "key": 1733497892112,
+        "children": [],
+        "todo": {
+          "content": "printf 10 char of each field",
+          "id": 1733497892112,
+          "level": "default",
+          "done": true,
+          "start": 1733497892112,
+          "focus": false,
+          "end": 1733508484552
+        }
+      },
+      {
+        "key": 1733497925135,
+        "children": [],
+        "todo": {
+          "content": "split header file so each class must have his own header file",
+          "id": 1733497925135,
+          "level": "default",
+          "done": false,
+          "start": 1733497925136
+        }
+      },
+      {
+        "key": 1733497969135,
+        "children": [],
+        "todo": {
+          "content": "and same as files.cpp",
+          "id": 1733497969135,
+          "level": "default",
+          "done": false,
+          "start": 1733497969135
+        }
+      }
+    ],
+    "expandKeys": [],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "timelines": [],
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "todo",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "en",
+    "version": "1733508484575"
+  }
+}
