@@ -1,35 +1,28 @@
 #include "contact.hpp"
 
-std::string edit(std::string data)
+void contact::setter(std::string first, std::string last, std::string nick,
+            std::string phone)
 {
-    if (data.size() > 10)
-        return (data.substr(0, 9) + '.');
-    else 
-        return (data);
+            if (first.empty() || last.empty() || nick.empty() || phone.empty())
+            {
+                std::cout << "Invalid input\n";
+                return;
+            }
+            this->first_name = first;
+            this->last_name = last;
+            this->nickname = nick;
+            this->phone_number = phone;
 }
 
-void add_contact(phonebook &phonebook)
+std::string contact::getter(std::string data)
 {
-    std::string first_name;
-    std::string last_name;
-    std::string nickname;
-    std::string phone_number;
-
-    static int i;
-    while (i < 8)
-    {
-            std::cout << "Enter first name:: ";
-            std::getline(std::cin, first_name);
-            std::cout << "Enter last name:: ";
-            std::getline(std::cin, last_name);
-            std::cout << "Enter nickname:: ";
-            std::getline(std::cin, nickname);
-            std::cout << "Enter phone number:: ";
-            std::getline(std::cin, phone_number);
-            phonebook.contacts[i].setter(first_name, last_name, nickname, phone_number);
-        i++;
-        if (i == 8)
-            i = 0;
-        break;
-    }
+            if (data == "first_name")
+                return this->first_name;
+            else if (data == "last_name")
+                return this->last_name;
+            else if (data == "nickname")
+                return this->nickname;
+            else if (data == "phone_number")
+                return this->phone_number;
+            return NULL;
 }
