@@ -7,7 +7,7 @@ OBJ = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(Cxx) -o $(NAME) $(OBJ)
+	$(CXX) $(FLAGS) -o $(NAME) $(OBJ)
 
 clean:
 	rm -rf $(OBJ)

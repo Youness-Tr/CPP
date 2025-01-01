@@ -8,7 +8,7 @@ int main()
     while (1)
     {
         std::cout << "Enter a command: ";
-        std::getline(std::cin, input);
+        input = phonebook.ft_getline();
         if (input == "EXIT")
             break;
         else if (input == "ADD")
@@ -20,6 +20,3 @@ int main()
     }
     return (0);
 }
-// ? setw() // function is used to set the width of the field.
-// then we can check size of the string and if it is greater than 10 then we can use substr() function to get the first 10 characters of the string and  
-// add '.' then print it.

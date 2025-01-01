@@ -1,13 +1,13 @@
-NAME = megaPhone
+NAME = log
 CXX = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = megaphone.cpp
-OBJ = $(SRC:.cpp=.o)
+SRCS = tests.cpp Account.cpp
+OBJ = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CXX) $(FLAGS) -o $(NAME) $(OBJ)
+	$(CXX) $(FLAGS) $(SRCS) -o $(NAME)
 
 clean:
 	rm -rf $(OBJ)

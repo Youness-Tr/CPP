@@ -1,4 +1,7 @@
-#include "Account.hpp"
+#include <iostream>
+#include <ctime>
+#include <iomanip>
+# include "Account.hpp"
 
 int Account::_nbAccounts = 0;
 int Account::_totalAmount = 0;
@@ -83,14 +86,17 @@ bool Account::makeWithdrawal(int withdrawal)
     return(true);
 }
 
-void Account::_displayTimestamp( void ) {
-	std::time_t now = std::time(nullptr);
-	std::tm *ltm = std::localtime(&now);
-	std::cout << "[" << 1900 + ltm->tm_year
-			  << std::setw(2) << std::setfill('0') << 1 + ltm->tm_mon
-			  << std::setw(2) << std::setfill('0') << ltm->tm_mday << "_"
-			  << std::setw(2) << std::setfill('0') << ltm->tm_hour
-			  << std::setw(2) << std::setfill('0') << ltm->tm_min
-			  << std::setw(2) << std::setfill('0') << ltm->tm_sec << "] ";
-}
+void Account::_displayTimestamp(void)
+{
+    std::time_t now = std::time(NULL);
+    std::tm *ltm = std::localtime(&now);
 
+    std::cout << '['
+              << 1900 + ltm->tm_year
+              << std::setw(2) << std::setfill('0') << ltm->tm_mon + 1
+              << std::setw(2) << std::setfill('0') << ltm->tm_mday << '_'
+              << std::setw(2) << std::setfill('0') << ltm->tm_hour
+              << std::setw(2) << std::setfill('0') << ltm->tm_min
+              << std::setw(2) << std::setfill('0') << ltm->tm_sec
+              << "] ";
+}
